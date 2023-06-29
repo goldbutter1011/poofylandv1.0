@@ -272,3 +272,23 @@ body {
     will-change: transform; 
     transform: translate(0px, -5.47661px);
   }
+
+  @media (max-width: 1024px){
+    .hidden{
+      display: none;
+    }
+  }
+
+  @media (min-width: 1024px){
+    .mhidden{
+      display: none;
+    }
+  }
+
+  .icon-container {
+    line-height: 20;
+    margin: 30px auto 0;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: rgba(3,7,16,.9);
+  }

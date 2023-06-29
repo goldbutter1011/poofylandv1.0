@@ -5,11 +5,6 @@ import '../../public/css/style2.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Poofyland',
-  description: '',
-}
-
 export default function RootLayout({
   children,
 }: {
