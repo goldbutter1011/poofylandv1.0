@@ -50,7 +50,7 @@ export default function Header() {
 
   return (
     <header id="home" className="section viewport-header centered content">
-      <div className="main-event" data-sr-id="79">
+      <div className="main-event">
         <div className="centered">
           <img src="/imgs/logo.png" className="event-logo" alt="" />
         </div>
@@ -68,7 +68,7 @@ export default function Header() {
           minutes={minutes}
           seconds={seconds}
         />
-        <a href="https://poofyland.shop/register" target="_blank" >
+        <a href="https://poofyland.shop/register" target="_blank">
           <img src="/imgs/sign-up.png" className="signup-img" alt="" />
         </a>
       </div>

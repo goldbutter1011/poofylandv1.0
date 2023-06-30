@@ -1,6 +1,66 @@
 "use client";
+import {
+  FiFacebook,
+  FiTwitter,
+  FiYoutube,
+  FiInstagram,
+  FiLinkedin,
+} from "react-icons/fi";
+import {
+  TbBrandTelegram,
+  TbBrandTiktok,
+  TbBrandDiscord,
+  TbBrandMedium,
+} from "react-icons/tb";
 
 const Footer = () => {
+  const socialIcons = [
+    {
+      name: "facebook",
+      icon: <FiFacebook size={40} />,
+      link: "https://twitter.com/PoofyLand",
+    },
+    {
+      name: "twitter",
+      icon: <FiTwitter size={40} />,
+      link: "https://twitter.com/PoofyLand",
+    },
+    {
+      name: "linkin",
+      icon: <FiLinkedin size={40} />,
+      link: "https://www.linkedin.com/company/poofylandnft/",
+    },
+    {
+      name: "instagram",
+      icon: <FiInstagram size={40} />,
+      link: "https://www.instagram.com/poofyland_official/",
+    },
+    {
+      name: "youtube",
+      icon: <FiYoutube size={40} />,
+      link: "https://www.youtube.com/@poofyland",
+    },
+    {
+      name: "telegram",
+      icon: <TbBrandTelegram size={40} />,
+      link: "https://t.me/poofylandofficial",
+    },
+    {
+      name: "discord",
+      icon: <TbBrandDiscord size={40} />,
+      link: "https://discord.com/invite/eEsK8u7cXE",
+    },
+    {
+      name: "tiktok",
+      icon: <TbBrandTiktok size={40} />,
+      link: "https://www.tiktok.com/@poofyland",
+    },
+    {
+      name: "medium",
+      icon: <TbBrandMedium size={40} />,
+      link: "https://medium.com/@poofyland",
+    },
+  ];
   return (
     <>
       <footer id="community" className="section centered">
@@ -16,167 +76,16 @@ const Footer = () => {
                 height={500}
               />
               <div className="social">
-                <a
-                  href="https://www.facebook.com/pooflyland/"
-                  target="_blank"
-                  className="facebook"
-                  style={{ visibility: "visible" }}
-                >
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth="0"
-                    viewBox="0 0 320 512"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
+                {socialIcons.map((socialIcons, index) => (
+                  <a
+                    key={index}
+                    href={socialIcons.link}
+                    target="_blank"
+                    className={socialIcons.name}
                   >
-                  </svg>
-                </a>
-
-                <a
-                  href="https://twitter.com/PoofyLand"
-                  target="_blank"
-                  className="twitter"
-                  style={{ visibility: "visible" }}
-                >
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth="0"
-                    viewBox="0 0 512 512"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                  </svg>
-                </a>
-
-                <a
-                  href="https://www.linkedin.com/company/poofylandnft/"
-                  target="_blank"
-                  className="linkin"
-                  style={{ visibility: "visible" }}
-                >
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth="0"
-                    viewBox="0 0 448 512"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                  </svg>
-                </a>
-
-                <a
-                  href="https://www.instagram.com/poofyland_official/"
-                  target="_blank"
-                  className="instagram"
-                  style={{ visibility: "visible" }}
-                >
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth="0"
-                    viewBox="0 0 448 512"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                  </svg>
-                </a>
-
-                <a
-                  href="https://www.youtube.com/@poofyland"
-                  target="_blank"
-                  className="youtube"
-                  style={{ visibility: "visible" }}
-                >
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth="0"
-                    viewBox="0 0 576 512"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                  </svg>
-                </a>
-
-                <a
-                  href="https://t.me/poofylandofficial"
-                  target="_blank"
-                  className="telegram"
-                  style={{ visibility: "visible" }}
-                >
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth="0"
-                    viewBox="0 0 448 512"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                  </svg>
-                </a>
-
-                <a
-                  className="discord"
-                  href="https://discord.com/invite/eEsK8u7cXE"
-                  target="_blank"
-                  style={{ visibility: "visible" }}
-                >
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth="0"
-                    viewBox="0 0 640 512"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                  </svg>
-                </a>
-
-                <a
-                  href="https://www.tiktok.com/@poofyland"
-                  target="_blank"
-                  className="tiktok"
-                  style={{ visibility: "visible" }}
-                >
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth="0"
-                    viewBox="0 0 448 512"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                  </svg>
-                </a>
-
-                <a
-                  href="https://medium.com/@poofyland"
-                  target="_blank"
-                  className="medium"
-                  style={{ visibility: "visible" }}
-                >
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth="0"
-                    viewBox="0 0 512 512"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                  </svg>
-                </a>
+                    {socialIcons.icon}
+                  </a>
+                ))}
               </div>
               <br></br>
             </div>
@@ -185,7 +94,7 @@ const Footer = () => {
           <div className="partners" style={{ visibility: "visible" }}>
             <small>Partners:</small>
             <br></br>
-            <div>
+            <div className="centered">
               <img src="/imgs/ddc.png" alt="" />
               <img src="/imgs/crossspace-2.png" alt="" />
             </div>
@@ -194,9 +103,11 @@ const Footer = () => {
           <div className="partners" style={{ visibility: "visible" }}>
             <small>Powered By:</small>
             <br></br>
-            <a href="https://unity.com/" target="_blank">
-              <img src="/imgs/unity.png" alt="" />
-            </a>
+            <div className="centered">
+              <a href="https://unity.com/" target="_blank">
+                <img src="/imgs/unity.png" alt="" />
+              </a>
+            </div>
           </div>
 
           <div className="copyright" style={{ visibility: "visible" }}>

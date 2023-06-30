@@ -1,14 +1,15 @@
 "use client"; // this is a client component
-import React from "react";
+import React, {useState} from "react";
 import Link from "next/link";
 
 const Extrasection = () => {
+  // const []
   return (
     <section id="extra" className="centered">
       <div className="content">
         <div className="footer-intro center">
           <span className="water1">
-            <span className="water2">
+            <span className="water2 centered">
               <img src="/imgs/water-scene.png" alt="" />
             </span>
           </span>
