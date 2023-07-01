@@ -1,8 +1,10 @@
 "use client"; // this is a client component
 import React from "react";
 import Script from "next/script";
+import { useState, useEffect } from "react";
 
 const AboutSection = () => {
+
   return (
     <>
       <Script
@@ -13,7 +15,7 @@ const AboutSection = () => {
         <div className="content">
           <section className="centered">
             <div className="about-container">
-              <img src="/imgs/environment-float.png" className="about-logo" />
+              <img src="/imgs/environment-float.png" className="about-logo" data-aos="zoom-in" />
               <div>
                 <span className="mini-header">About</span>
                 <h1>POOFYLAND</h1>

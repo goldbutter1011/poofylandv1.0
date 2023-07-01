@@ -1,4 +1,4 @@
-"use client"; // this is a client component
+"use client";
 import React from "react";
 import { TimerContainer } from "./TimerContainer";
 import { useEffect, useState } from "react";
@@ -13,7 +13,6 @@ export default function Header() {
   const timeToDays = time * 60 * 60 * 24 * 1000;
 
   let countDownDate = new Date().getTime() + timeToDays;
-
   useEffect(() => {
     var updateTime = setInterval(() => {
       var now = new Date().getTime();
@@ -51,26 +50,33 @@ export default function Header() {
   return (
     <header id="home" className="section viewport-header centered content">
       <div className="main-event">
-        <div className="centered">
-          <img src="/imgs/logo.png" className="event-logo" alt="" />
-        </div>
-        <br></br>
-        <a
-          href="https://poofyland.shop/register"
-          target="_blank"
-          className="centered"
+        <div
+          data-aos="zoom-in"
+          data-aos-duration="800"
+          data-aos-easing="ease-in"
         >
-          <img src="/imgs/join-beta.png" className="event-img" alt="" />
-        </a>
-        <TimerContainer
-          days={days}
-          hours={hours}
-          minutes={minutes}
-          seconds={seconds}
-        />
-        <a href="https://poofyland.shop/register" target="_blank">
-          <img src="/imgs/sign-up.png" className="signup-img" alt="" />
-        </a>
+          <div className="centered">
+            <img src="/imgs/logo.png" className="event-logo" alt="" />
+          </div>
+          <br></br>
+
+          <a
+            href="https://poofyland.shop/register"
+            target="_blank"
+            className="centered"
+          >
+            <img src="/imgs/join-beta.png" className="event-img" alt="" />
+          </a>
+          <TimerContainer
+            days={days}
+            hours={hours}
+            minutes={minutes}
+            seconds={seconds}
+          />
+          <a href="https://poofyland.shop/register" target="_blank" >
+            <img src="/imgs/sign-up.png" className="signup-img" alt="" />
+          </a>
+        </div>
       </div>
     </header>
   );
