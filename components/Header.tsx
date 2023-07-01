@@ -73,7 +73,13 @@ export default function Header() {
             minutes={minutes}
             seconds={seconds}
           />
-          <a href="https://poofyland.shop/register" target="_blank" >
+        </div>
+        <div className="centered" style={{marginTop:30}}>
+          <a
+            href="https://poofyland.shop/register"
+            target="_blank"
+            style={{ width: 170, height: 20 }}
+          >
             <img src="/imgs/sign-up.png" className="signup-img" alt="" />
           </a>
         </div>
