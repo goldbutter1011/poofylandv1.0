@@ -4,7 +4,6 @@ import Script from "next/script";
 import { useState, useEffect } from "react";
 
 const AboutSection = () => {
-
   return (
     <>
       <Script
@@ -15,7 +14,11 @@ const AboutSection = () => {
         <div className="content">
           <section className="centered">
             <div className="about-container">
-              <img src="/imgs/environment-float.png" className="about-logo" data-aos="zoom-in" />
+              <img
+                src="/imgs/environment-float.png"
+                className="about-logo"
+                data-aos="zoom-in"
+              />
               <div>
                 <span className="mini-header">About</span>
                 <h1>POOFYLAND</h1>
@@ -56,10 +59,7 @@ const AboutSection = () => {
                 <h2>NFT</h2>
               </div>
               <div className="poofies">
-                <div
-                  className="poofy-container"
-                  style={{ visibility: "visible" }}
-                >
+                <div className="poofy-container">
                   <div className="model"></div>
                   <div>
                     <strong>PYRO (FIRE)</strong>
