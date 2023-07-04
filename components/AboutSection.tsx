@@ -1,16 +1,31 @@
 "use client"; // this is a client component
 import React from "react";
-import Script from "next/script";
 import { useState, useEffect } from "react";
 
 const AboutSection = () => {
   return (
     <>
-      <Script
-        type="module"
-        src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"
-      ></Script>
-      <section id="about">
+      <section id="about" className="section">
+        <span className="starcss_1">
+          <span className="starcss_2">
+            <img src="/imgs/stars-1.png" alt="" className="stars-bg" />
+          </span>
+        </span>
+        <span className="starcss_3">
+          <span className="starcss_4">
+            <img src="/imgs/stars-2.png" alt="" className="stars-bg" />
+          </span>
+        </span>
+        <span className="starcss_5">
+          <span className="starcss_6">
+            <img src="/imgs/stars-1.png" alt="" className="stars-bg-2" />
+          </span>
+        </span>
+        <span className="starcss_7">
+          <span className="starcss_7">
+            <img src="/imgs/stars-2.png" alt="" className="stars-bg-2" />
+          </span>
+        </span>
         <div className="content">
           <section className="centered">
             <div className="about-container">
@@ -18,6 +33,7 @@ const AboutSection = () => {
                 src="/imgs/environment-float.png"
                 className="about-logo"
                 data-aos="zoom-in"
+                data-sr-id="6"
               />
               <div>
                 <span className="mini-header">About</span>

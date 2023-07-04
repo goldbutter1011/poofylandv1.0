@@ -293,3 +293,110 @@ body {
     background-color: rgba(3,7,16,.9);
   }
 
+  .discord_svg{
+    display: inline!important;
+  }
+
+  .starcss_1
+  {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: initial;
+  }
+
+  .starcss_2
+  {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: initial;
+  }
+
+  .starcss_3
+  {
+    backface-visibility: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    user-select: initial;
+    pointer-events: initial;
+    will-change: transform;
+    transform: translate(0px, -136.667px);
+  }
+
+  .starcss_4
+  {
+    backface-visibility: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    user-select: initial;
+    pointer-events: initial;
+    will-change: transform;
+    transform: translate(0px, -136.667px);
+  }
+
+  .starcss_5
+  {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: initial;
+  }
+
+  .starcss_6
+  {
+    backface-visibility: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    user-select: initial;
+    pointer-events: initial;
+    will-change: transform;
+    transform: translate(0px, -227.778px);
+  }
+
+  .starcss_7
+  {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: initial;
+  }
+
+  .starcss_7
+  {
+    backface-visibility: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    user-select: initial;
+    pointer-events: initial;
+    will-change: transform;
+    transform: translate(0px, -136.667px);
+  }

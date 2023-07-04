@@ -2,6 +2,7 @@
 import React from "react";
 import { TimerContainer } from "./TimerContainer";
 import { useEffect, useState } from "react";
+import Script from "next/script";
 
 export default function Header() {
   const [time, setTime] = useState<number>(18);
@@ -49,12 +50,9 @@ export default function Header() {
 
   return (
     <header id="home" className="section viewport-header centered content">
+      <Script src="/js/scrollreveal.min.js"></Script>
       <div className="main-event">
-        <div
-          data-aos="zoom-in"
-          data-aos-duration="800"
-          data-aos-easing="ease-in"
-        >
+        <div data-aos="zoom-in" data-aos-duration="800">
           <div className="centered">
             <img src="/imgs/logo.png" className="event-logo" alt="" />
           </div>
@@ -73,15 +71,15 @@ export default function Header() {
             minutes={minutes}
             seconds={seconds}
           />
-        </div>
-        <div className="centered" style={{marginTop:30}}>
-          <a
-            href="https://poofyland.shop/register"
-            target="_blank"
-            style={{ width: 170, height: 20 }}
-          >
-            <img src="/imgs/sign-up.png" className="signup-img" alt="" />
-          </a>
+          <div className="centered" style={{ marginTop: 30 }}>
+            <a
+              href="https://poofyland.shop/register"
+              target="_blank"
+              style={{ width: 170, height: 20 }}
+            >
+              <img src="/imgs/sign-up.png" className="signup-img" alt="" />
+            </a>
+          </div>
         </div>
       </div>
     </header>
