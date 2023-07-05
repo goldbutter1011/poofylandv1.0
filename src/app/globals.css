@@ -234,7 +234,7 @@ body {
     user-select: initial; 
     pointer-events: initial; 
     will-change: transform; 
-    transform: translate(0px, -133.161px);
+    transform: translate(-50%, -50%);
   }
 
   .cloud2{
@@ -246,7 +246,7 @@ body {
     user-select: initial; 
     pointer-events: initial; 
     will-change: transform; 
-    transform: translate(0px, -38.2617px);
+    transform: translate(-50%, -50%);
   }
 
   .water1{
@@ -270,7 +270,7 @@ body {
     user-select: initial; 
     pointer-events: initial; 
     will-change: transform; 
-    transform: translate(0px, -5.47661px);
+    transform: translate(-50%, -50%);
   }
 
   @media (max-width: 1024px){
@@ -304,7 +304,7 @@ body {
     display: inline-block;
     user-select: none;
     pointer-events: none;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     z-index: initial;
@@ -317,7 +317,7 @@ body {
     display: inline-block;
     user-select: none;
     pointer-events: none;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     z-index: initial;
@@ -332,8 +332,6 @@ body {
     display: inline-block;
     user-select: initial;
     pointer-events: initial;
-    will-change: transform;
-    transform: translate(0px, -136.667px);
   }
 
   .starcss_4
@@ -345,8 +343,6 @@ body {
     display: inline-block;
     user-select: initial;
     pointer-events: initial;
-    will-change: transform;
-    transform: translate(0px, -136.667px);
   }
 
   .starcss_5
@@ -356,7 +352,7 @@ body {
     display: inline-block;
     user-select: none;
     pointer-events: none;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     z-index: initial;
@@ -371,8 +367,6 @@ body {
     display: inline-block;
     user-select: initial;
     pointer-events: initial;
-    will-change: transform;
-    transform: translate(0px, -227.778px);
   }
 
   .starcss_7
@@ -388,7 +382,7 @@ body {
     z-index: initial;
   }
 
-  .starcss_7
+  .starcss_8
   {
     backface-visibility: hidden;
     position: relative;
@@ -397,6 +391,14 @@ body {
     display: inline-block;
     user-select: initial;
     pointer-events: initial;
-    will-change: transform;
-    transform: translate(0px, -136.667px);
+  }
+
+  .reddit {
+    color: #ff4500!important;
+    border-color: #ff4500!important;
+  }
+
+  .community-img
+  {
+    display: inline-block!important;
   }

@@ -1,8 +1,20 @@
 "use client"; // this is a client component
 import React from "react";
-import { useState, useEffect } from "react";
+import ScrollReveal from "scrollreveal";
+import { useEffect } from "react";
 
 const AboutSection = () => {
+  useEffect(() => {
+    ScrollReveal().reveal(".about-logo", {
+      delay: 100,
+      duration: 500,
+      distance: 0,
+      scale: 0.7,
+      origin: 'bottom',
+      reset: true,
+    });
+  }, []);
+
   return (
     <>
       <section id="about" className="section">
@@ -22,7 +34,7 @@ const AboutSection = () => {
           </span>
         </span>
         <span className="starcss_7">
-          <span className="starcss_7">
+          <span className="starcss_8">
             <img src="/imgs/stars-2.png" alt="" className="stars-bg-2" />
           </span>
         </span>
@@ -32,8 +44,6 @@ const AboutSection = () => {
               <img
                 src="/imgs/environment-float.png"
                 className="about-logo"
-                data-aos="zoom-in"
-                data-sr-id="6"
               />
               <div>
                 <span className="mini-header">About</span>

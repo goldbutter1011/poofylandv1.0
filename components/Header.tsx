@@ -2,9 +2,20 @@
 import React from "react";
 import { TimerContainer } from "./TimerContainer";
 import { useEffect, useState } from "react";
-import Script from "next/script";
+import ScrollReveal from "scrollreveal";
 
 export default function Header() {
+  useEffect(() => {
+    ScrollReveal().reveal(".main-event", {
+      delay: 300,
+      duration: 1500,
+      distance: 0,
+      scale: 0.7,
+      origin: 'bottom',
+      reset: true,
+    });
+  }, []);
+
   const [time, setTime] = useState<number>(18);
   const [days, setDays] = useState<number>(0);
   const [hours, setHours] = useState<number>(0);
@@ -50,9 +61,8 @@ export default function Header() {
 
   return (
     <header id="home" className="section viewport-header centered content">
-      <Script src="/js/scrollreveal.min.js"></Script>
       <div className="main-event">
-        <div data-aos="zoom-in" data-aos-duration="800">
+        <div>
           <div className="centered">
             <img src="/imgs/logo.png" className="event-logo" alt="" />
           </div>

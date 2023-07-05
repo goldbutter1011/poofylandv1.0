@@ -5,7 +5,6 @@ import AboutSection from "../../components/AboutSection";
 import Roadmapsection from "../../components/RoadmapSection";
 import Extrasection from "../../components/ExtraSection";
 import Updatesection from "../../components/UpdateSection";
-import Script from "next/script";
 
 export const metadata = {
   title: "Poofyland",
@@ -15,8 +14,6 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <Script src="flipdown.min.js"></Script>
-      <Script src="scrollreveal.min.js"></Script>
       <Navbar></Navbar>
       <video src="/videos/banner-2.mp4" autoPlay loop playsInline muted></video>
       <Header></Header>
