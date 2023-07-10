@@ -22,7 +22,7 @@ export default function Home() {
       <Extrasection></Extrasection>
       <a
         id="floater"
-        href="https://discord.com/invite/TCSt3jBJZ8"
+        href="https://discord.com/invite/TCSt3  jBJZ8"
         target="_blank"
       >
         <svg

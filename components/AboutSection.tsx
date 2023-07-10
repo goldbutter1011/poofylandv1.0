@@ -2,6 +2,8 @@
 import React from "react";
 import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
+import "@google/model-viewer";
+import ModelViewer from "./ModelViewer";
 
 const AboutSection = () => {
   useEffect(() => {
@@ -10,7 +12,7 @@ const AboutSection = () => {
       duration: 500,
       distance: 0,
       scale: 0.7,
-      origin: 'bottom',
+      origin: "bottom",
       reset: true,
     });
   }, []);
@@ -41,10 +43,7 @@ const AboutSection = () => {
         <div className="content">
           <section className="centered">
             <div className="about-container">
-              <img
-                src="/imgs/environment-float.png"
-                className="about-logo"
-              />
+              <img src="/imgs/environment-float.png" className="about-logo" />
               <div>
                 <span className="mini-header">About</span>
                 <h1>POOFYLAND</h1>
@@ -86,14 +85,20 @@ const AboutSection = () => {
               </div>
               <div className="poofies">
                 <div className="poofy-container">
-                  <div className="model"></div>
+                  <div className="model">
+                    <ModelViewer
+                      altname="fire Poofy"
+                      source="/3d/fire.glb"
+                      iosSource="/3d/fire.usdz"
+                    />
+                  </div>
                   <div>
                     <strong>PYRO (FIRE)</strong>
                   </div>
                   <p className="poofy-description">
                     The masters of fire, capable of unleashing powerful flames
                     and scorching their opponents with intense heat. Great
-                    choice for more aggressive playstyle.
+                    choice for more aggressive playstyle.z
                   </p>
                 </div>
 
@@ -101,7 +106,13 @@ const AboutSection = () => {
                   className="poofy-container"
                   style={{ visibility: "visible" }}
                 >
-                  <div className="model"></div>
+                  <div className="model">
+                    <ModelViewer
+                      altname="water Poofy"
+                      source="/3d/water.glb"
+                      iosSource="/3d/water.usdz"
+                    />
+                  </div>
                   <div>
                     <strong>AQUA (WATER)</strong>
                   </div>
@@ -116,7 +127,13 @@ const AboutSection = () => {
                   className="poofy-container"
                   style={{ visibility: "visible" }}
                 >
-                  <div className="model"></div>
+                  <div className="model">
+                    <ModelViewer
+                      altname="wind Poofy"
+                      source="/3d/wind.glb"
+                      iosSource="/3d/wind.usdz"
+                    />
+                  </div>
                   <div>
                     <strong>AERO (WIND)</strong>
                   </div>
@@ -131,7 +148,13 @@ const AboutSection = () => {
                   className="poofy-container"
                   style={{ visibility: "visible" }}
                 >
-                  <div className="model"></div>
+                  <div className="model">
+                    <ModelViewer
+                      altname="earth Poofy"
+                      source="/3d/earth.glb"
+                      iosSource="/3d/earth.usdz"
+                    />
+                  </div>
                   <div>
                     <strong>TERRA (EARTH)</strong>
                   </div>
