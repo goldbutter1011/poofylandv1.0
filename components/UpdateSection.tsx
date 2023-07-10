@@ -1,7 +1,5 @@
 "use client"; // this is a client component
 import React from "react";
-import Link from "next/link";
-import { wrap } from "module";
 
 const Updatesection = () => {
   return (
