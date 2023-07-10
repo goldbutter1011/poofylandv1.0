@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { FlipDown } from '../public/js/flipdown';
-import '../public/css/flipdown.css';
+import { FlipDown } from '../../public/js/flipdown';
+import '../../public/css/flipdown.css';
 
 const NextFlipdown = ({ endTime, theme = "dark", headings = ["Days", "Hours", "Minutes", "Seconds"] }) => {
 

@@ -1,11 +1,16 @@
-"use client"; // this is a client component
+"use client";
 import React from "react";
-import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
+import ModelViewer from "../components/libs/ModelViewer";
+import "keen-slider/keen-slider.min.css";
+import { useKeenSlider } from "keen-slider/react";
+import KeenSlider from "./libs/KeenSlider";
+
 import "@google/model-viewer";
-import ModelViewer from "./ModelViewer";
+import ScrollReveal from "scrollreveal";
 
 const AboutSection = () => {
+  const [sliderRef] = useKeenSlider();
   useEffect(() => {
     ScrollReveal().reveal(".about-logo", {
       delay: 100,
@@ -182,7 +187,40 @@ const AboutSection = () => {
                 <span className="mini-header">Game</span>
                 <h2>Modes</h2>
               </div>
-              <div className="keen-slider mode-container"></div>
+              <div ref={sliderRef} className="keen-slider mode-container">
+                <KeenSlider Imageurl="/imgs/mode-new-arena.png">
+                  An interactive game arena where players fight against other
+                  players over gold loot. All gold won from the arena can be
+                  withdrawn into real-world currency with a predetermined
+                  conversion rate. PVP uses a balanced system that matches
+                  players against other players inside the same league and
+                  level. The arena offers players an earning opportunity for
+                  every win. Every room has a different energy requirement to
+                  get in to. The amount of gold looted from each match will
+                  depend on which room the player chooses to enter.
+                </KeenSlider>
+
+                <KeenSlider Imageurl="/imgs/mode-new-training.png">
+                  Skills are learnt in the training ground where Mystic Masters
+                  test out the strength of their team composition. By embarking
+                  on a journey inside the training ground, Poofies are subjected
+                  in Missions and Trainings which allows them to upgrade their
+                  learnt skills which expands their skill set, thereby giving
+                  them more skill options especially when fighting in the arena.
+                  Mystic Masters can then utilise these skills to make the best
+                  combination and gain advantage in PVP matches.
+                </KeenSlider>
+
+                <KeenSlider Imageurl="/imgs/mode-new-fusion.png">
+                  To make Poofies even more powerful than they already are,
+                  Fusion is undertaken. By undergoing Fusion, Poofies` powers
+                  are merged to make one strong Poofy. This Poofy will have an
+                  increased star level which levels up its base attributes
+                  thereby making it stronger in the arena. This increase in
+                  star-level will come in handy when battling with other
+                  Poofies, increasing the team`s chances of winning the match.
+                </KeenSlider>
+              </div>
               <div className="modes-nav">
                 <span className="dot">Arena</span>
                 <span className="dot">Training</span>
@@ -224,7 +262,7 @@ const AboutSection = () => {
                     <h3>400$ Busd Pre-Betatest Airdrop 🚀</h3>
                     <p>
                       We are dropping more $$$ this month! Come and join
-                      Poofyland's 🥳400$ BUSD PRE-BETATEST AIRDROP 🚀
+                      Poofyland`s 🥳400$ BUSD PRE-BETATEST AIRDROP 🚀
                     </p>
                   </a>
                 </div>

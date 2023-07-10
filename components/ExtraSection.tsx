@@ -1,6 +1,5 @@
 "use client"; // this is a client component
 import React, {useState} from "react";
-import Link from "next/link";
 
 const Extrasection = () => {
   // const []

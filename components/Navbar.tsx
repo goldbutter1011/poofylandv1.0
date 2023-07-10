@@ -1,6 +1,6 @@
 "use client"; // this is a client component
 import React, { useState } from "react";
-import { useScrollPosition } from "@/app/hooks/useScrollPosition";
+import { useScrollPosition } from "../components/libs/useScrollPosition";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 export default function Navbar() {

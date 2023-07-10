@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import NextFlipdown from "./FlipDown";
-import ScrollReveal from "scrollreveal";
+import NextFlipdown from "./libs/FlipDown";
 import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
 export default function Header() {
   useEffect(() => {
