@@ -4,13 +4,13 @@ import ScrollReveal from "scrollreveal";
 
 const Footer = () => {
   useEffect(() => {
-    ScrollReveal().reveal(".community-img", {
+    ScrollReveal().reveal(".community-img, .partners, .copyright", {
       delay: 200,
-      distance: "50px",
-      duration: 1000,
+      distance: "20px",
+      duration: 500,
       easing: "ease-in-out",
-      origin: "bottom",
-      reset: true,
+      origin: "top",
+      reset: false,
     });
   }, []);
   return (

@@ -1,8 +1,8 @@
 "use client"; // this is a client component
 import React from "react";
-import Link from "next/link";
 
 const Roadmapsection = () => {
+
   return (
     <section id="roadmap" className="section centered">
       <span className="cloud">
@@ -22,128 +22,128 @@ const Roadmapsection = () => {
         </div>
         <div className="timeline">
           <ul>
-            <li style={{ visibility: "visible" }}>
+            <li>
               <div>
                 <span className="mini-header">Q4 2022</span>
                 <ul className="roadmap-list">
-                  <li style={{ visibility: "visible" }}>Team Onboarding</li>
-                  <li style={{ visibility: "visible" }}>
+                  <li>Team Onboarding</li>
+                  <li>
                     Project Plan Approval
                   </li>
-                  <li style={{ visibility: "visible" }}>
+                  <li>
                     Game and Character Design Conceptualization
                   </li>
-                  <li style={{ visibility: "visible" }}>
+                  <li>
                     Implementation of Game Play and Workflow Designs
                   </li>
-                  <li style={{ visibility: "visible" }}>
+                  <li>
                     Game Characters and Map Prototype Finalization
                   </li>
-                  <li style={{ visibility: "visible" }}>
+                  <li>
                     Game Design and Asset Licensing
                   </li>
-                  <li style={{ visibility: "visible" }}>
+                  <li>
                     Completion of Documents for Mobile App Deployment
                   </li>
-                  <li style={{ visibility: "visible" }}>
+                  <li>
                     Game Economic Design and Implementation
                   </li>
                 </ul>
               </div>
             </li>
-            <li style={{ visibility: "visible" }}>
+            <li>
               <div>
                 <span className="mini-header">Q1 2023</span>
                 <ul className="roadmap-list">
-                  <li style={{ visibility: "visible" }}>
+                  <li>
                     Official Release of marketing Site and Content
                   </li>
-                  <li style={{ visibility: "visible" }}>
+                  <li>
                     Trailers and Teasers of In-Game Story Outline
                   </li>
-                  <li style={{ visibility: "visible" }}>
+                  <li >
                     Implementation of whitepaper and NFT Smart contract
                   </li>
-                  <li style={{ visibility: "visible" }}>
+                  <li >
                     Internal Phase: Game and Shop Testing
                   </li>
-                  <li style={{ visibility: "visible" }}>
+                  <li >
                     Marketing and Community events starts
                   </li>
-                  <li style={{ visibility: "visible" }}>
+                  <li >
                     Social Media and Press Release Publications
                   </li>
                 </ul>
               </div>
             </li>
-            <li style={{ visibility: "visible" }}>
+            <li >
               <div>
                 <span className="mini-header">Q2 2023</span>
                 <ul className="roadmap-list">
-                  <li style={{ visibility: "visible" }}>
+                  <li >
                     Internal Phase: PVP and Training Ground Enhancement
                   </li>
-                  <li style={{ visibility: "visible" }}>
+                  <li >
                     NFT Minting (Beta Test)
                   </li>
-                  <li style={{ visibility: "visible" }}>
+                  <li >
                     Game Enhancement: Internal Betatest
                   </li>
-                  <li style={{ visibility: "visible" }}>
+                  <li >
                     Public Release: Training Ground, PVP Mode, Game Shop
                   </li>
-                  <li style={{ visibility: "visible" }}>
+                  <li >
                     Ingame Economy integration
                   </li>
                 </ul>
               </div>
             </li>
-            <li style={{ visibility: "visible" }}>
+            <li >
               <div>
                 <span className="mini-header">Q3 2023</span>
                 <ul className="roadmap-list">
-                  <li style={{ visibility: "visible" }}>
+                  <li >
                     Official Game Launching (All Game Modes)
                   </li>
-                  <li style={{ visibility: "visible" }}>Marketplace</li>
-                  <li style={{ visibility: "visible" }}>NFT Public Sales</li>
-                  <li style={{ visibility: "visible" }}>
+                  <li >Marketplace</li>
+                  <li >NFT Public Sales</li>
+                  <li >
                     Public Release: Fusion
                   </li>
-                  <li style={{ visibility: "visible" }}>
+                  <li >
                     Community Contests and marketing Strategies
                   </li>
-                  <li style={{ visibility: "visible" }}>
+                  <li >
                     Mobile Version Enhancement and improvements
                   </li>
-                  <li style={{ visibility: "visible" }}>
+                  <li >
                     Acquire Official Partnership with Private Ventures
                   </li>
                 </ul>
               </div>
             </li>
-            <li style={{ visibility: "visible" }}>
+            <li >
               <div>
                 <span className="mini-header">Q4 2023</span>
                 <ul className="roadmap-list">
-                  <li style={{ visibility: "visible" }}>PVP Tournaments</li>
-                  <li style={{ visibility: "visible" }}>
+                  <li >PVP Tournaments</li>
+                  <li >
                     Advance Game Accessories and Upgrades
                   </li>
-                  <li style={{ visibility: "visible" }}>
+                  <li >
                     Additional Game Modes (TBA)
                   </li>
-                  <li style={{ visibility: "visible" }}>
+                  <li >
                     Community Engagement and marketing Strategies
                   </li>
                 </ul>
               </div>
             </li>
-            <li style={{ visibility: "visible" }}>
+            <li >
               <div>
                 <span className="mini-header">Q1 2024</span>
                 <ul className="roadmap-list">
-                  <li style={{ visibility: "visible" }}>
+                  <li >
                     Ongoing Development…
                   </li>
                 </ul>
