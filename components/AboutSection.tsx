@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import ModelViewer from "../components/libs/ModelViewer";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
@@ -10,7 +10,55 @@ import "@google/model-viewer";
 import ScrollReveal from "scrollreveal";
 
 const AboutSection = () => {
-  const [sliderRef] = useKeenSlider();
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [load, setLoaded] = useState(false);
+  const [sliderRef, instanceRef] = useKeenSlider(
+    {
+      initial: 0,
+      loop: true,
+      slideChanged(slider) {
+        setCurrentSlide(slider.track.details.rel);
+      },
+      created() {
+        setLoaded(true);
+      },
+    },
+    [
+      (slider) => {
+        let timeout;
+        let mouseover = false;
+
+        function clearNexttimeout() {
+          clearTimeout(timeout);
+        }
+
+        function nextTimeout() {
+          clearTimeout(timeout);
+          timeout = setTimeout(() => {
+            slider.next();
+          }, 10000);
+        }
+
+        slider.on("created", () => {
+          slider.container.addEventListener("mouseover", () => {
+            mouseover = true;
+            clearNexttimeout();
+          });
+
+          slider.container.addEventListener("mouseout", () => {
+            mouseover = false;
+            nextTimeout();
+          });
+
+          nextTimeout();
+        });
+        slider.on("dragStarted", clearNexttimeout);
+        slider.on("animationEnded", nextTimeout);
+        slider.on("updated", nextTimeout);
+      },
+    ]
+  );
+
   useEffect(() => {
     ScrollReveal().reveal(".about-logo", {
       delay: 100,
@@ -220,11 +268,56 @@ const AboutSection = () => {
                   star-level will come in handy when battling with other
                   Poofies, increasing the team`s chances of winning the match.
                 </KeenSlider>
+                <svg
+                  className="arrow arrow--left "
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  style={{ width: 45, height: 45 }}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    instanceRef.current?.prev();
+                  }}
+                >
+                  <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"></path>
+                </svg>
+                <svg
+                  className="arrow arrow--right  arrow--disabled"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  style={{ width: 45, height: 45 }}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    instanceRef.current?.next();
+                  }}
+                >
+                  <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"></path>
+                </svg>
               </div>
               <div className="modes-nav">
-                <span className="dot">Arena</span>
-                <span className="dot">Training</span>
-                <span className="dot">Fusion</span>
+                <span
+                  className={"dot" + (currentSlide == 0 ? " active" : "")}
+                  onClick={(e) => {
+                    instanceRef.current.moveToIdx(0);
+                  }}
+                >
+                  Arena
+                </span>
+                <span
+                  className={"dot" + (currentSlide == 1 ? " active" : "")}
+                  onClick={(e) => {
+                    instanceRef.current.moveToIdx(1);
+                  }}
+                >
+                  Training
+                </span>
+                <span
+                  className={"dot" + (currentSlide == 2 ? " active" : "")}
+                  onClick={(e) => {
+                    instanceRef.current.moveToIdx(2);
+                  }}
+                >
+                  Fusion
+                </span>
               </div>
             </div>
           </section>
